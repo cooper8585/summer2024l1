@@ -20,7 +20,7 @@ int main()
     while (true) {
         if(int_trig ==1){
             int_trig = 0;
-            printif("bttnFall \r\n");
+            printf("bttnFall \r\n");
             
         }
     }
