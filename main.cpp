@@ -1,7 +1,9 @@
 #include "mbed.h"
 #include <cstdio>
 /*
-a few words max 100 on the program
+This Mbed program configures an interrupt on a button connected to pin PC_13. 
+When the button is pressed, the bttnFall function sets the int_trig flag to 1.
+The main loop continuously checks this flag, and when it finds the flag set, it prints "bttnFall" and resets the flag to 0.
 */
 InterruptIn bluebtn(PC_13);
 volatile int int_trig = 0;
